@@ -78,7 +78,6 @@
 
     h1 {
       font-family: 'Playfair Display', serif;
-      /* 完美比例 1.5rem，不換行 */
       font-size: 1.5rem;
       color: var(--text-color);
       margin-bottom: 8px;
@@ -184,7 +183,6 @@
       transition: transform 0.3s;
     }
 
-    /* 內容區域 - 強制靠左對齊 */
     .faq-answer {
       max-height: 0;
       overflow: hidden;
@@ -193,7 +191,6 @@
       font-size: 0.9rem;
       line-height: 1.8;
       text-align: left;
-      /* 關鍵：文字靠左 */
     }
 
     .answer-content {
@@ -229,7 +226,7 @@
 
     /* 展開狀態 */
     .faq-item.active .faq-answer {
-      max-height: 900px;
+      max-height: 1200px; /* 增加最大高度以容納更多內容 */
     }
 
     .faq-item.active .faq-question::after {
@@ -261,13 +258,12 @@
     <div id="faq-section"></div>
 
     <footer>
-      &copy; 2025 Bonheur Cookie. All Rights Reserved.
+      &copy; 2026 Bonheur Cookie. All Rights Reserved.
     </footer>
   </div>
 
   <script>
     const config = {
-      // 連結設定
       links: [{
           title: "官方網站 Website",
           url: "https://www.bonheurcookie.com",
@@ -289,9 +285,7 @@
           icon: "💼"
         }
       ],
-      // FAQ 設定 (食品優先 -> 運送 -> 付款 -> 發票 -> 工期)
       faqs: [{
-          // 1. 保存方式 (最優先)
           q: "Q1. 產品建議保存方式？",
           a: `<ul>
                           <li><strong>達克瓦茲 / 奶油餅 / 巧克力松露：</strong>冷凍保存 7-14 天</li>
@@ -300,7 +294,6 @@
                         </ul>`
         },
         {
-          // 2. 食用方式
           q: "Q2. 產品建議食用方式？",
           a: `<ul>
                           <li><strong>達克瓦茲 / 奶油餅：</strong>夏天退冰 10-20 分鐘 / 冬天退冰 20-30 分鐘</li>
@@ -310,7 +303,6 @@
                         <span class="warning">※為了品質穩定，勿久放高溫環境※</span>`
         },
         {
-          // 3. 運送方式
           q: "Q3. 運送方式與運費？",
           a: `<ul>
                            <li>冷凍宅配：$190 (外島 $225)</li>
@@ -320,23 +312,27 @@
                         </ul>`
         },
         {
-          // 4. 連假配送
           q: "Q4. 連假寄公司怕沒人收？",
           a: `黑貓宅急便 週日固定不配送；至於國定連假則不一定休假，實際配送時間將依黑貓作業安排為準。<br>
               若您填寫公司地址，包裹將自動順延至<span class="highlight">正常上班日</span>投遞，不會在休假期間送達到無人收件。`
         },
         {
-          // 5. 付款方式 (已移除統編資訊)
           q: "Q5. 付款方式有哪些？",
           a: `<ul>
-                <li>信用卡付款 (VISA / Master / JCB)</li>
-                
+                <li><strong>信用卡付款：</strong>(VISA / Master / JCB)</li>
+                <li><strong>💳 ATM／網銀轉帳：</strong>
+                    <ul>
+                        <li><span class="highlight">繳費期限：</span>下單隔日 23:59 前完成付款。</li>
+                        <li>下單後系統自動產生一組「專屬虛擬帳號」。</li>
+                        <li>請依訂單金額<span class="warning">完整匯入正確金額</span>；若金額不符，訂單將失效並進入退款流程。</li>
+                        <li>逾期未付款，訂單將自動取消，需重新下單。</li>
+                        <li>匯款成功後系統自動通知，<span class="highlight">無需另外告知</span>。</li>
+                    </ul>
                 </li>
                 <li><span class="warning">無提供貨到付款 ❌</span></li>
               </ul>`
         },
         {
-          // 6. 新增：開立發票須知
           q: "Q6. 開立發票須知",
           a: `<ul>
                 <li>本店採用電子發票制，出貨時將不會隨貨附上紙本發票。</li>
@@ -346,7 +342,6 @@
               </ul>`
         },
         {
-          // 7. 製作工期 (原 Q6 順延至 Q7)
           q: "Q7. 製作工期與急件？",
           a: `<span class="highlight">我們堅持手工製作</span>，嚴選頂級食材，極致藝術值得等待。<br><br>
                         <ul>
@@ -356,13 +351,11 @@
                         </ul>`
         },
         {
-          // 8. 出貨順序 (原 Q7 順延至 Q8，並更新了備註文字)
           q: "Q8. 出貨順序問題？",
           a: `出貨日會依下單順序與送出訂單秒差依序出貨。<br>
                         <span class="small">※特殊節慶物流量大 可能延遲到貨※</span>`
         },
         {
-          // 9. 須知 (原 Q8 順延至 Q9，並修正了標題的 "⚠️")
           q: "⚠️ Q9. 訂購須知 (下單必讀)",
           a: `<ul>
                            <li>包裏無法完成配送退回，來回運費需自行吸收。</li>
@@ -374,14 +367,14 @@
                         </ul>`
         },
         {
-          // 10. 查詢 (原 Q9 順延至 Q10)
           q: "➜ Q10. 訂單進度查詢",
           a: `如需宅配單號，請於 <span class="highlight">寄出日當天 15:00 後</span> 到訂單內查詢。<br>
                         有任何問題請至訂單頁面詢問我們，謝謝。`
         }
       ]
     };
-    // 程式渲染區
+
+    // 渲染連結
     const linksContainer = document.getElementById('links-list');
     config.links.forEach(link => {
       const card = document.createElement('a');
@@ -395,25 +388,26 @@
             `;
       linksContainer.appendChild(card);
     });
+
+    // 渲染 FAQ
     const faqContainer = document.getElementById('faq-section');
     config.faqs.forEach(item => {
       const wrapper = document.createElement('div');
       wrapper.className = 'faq-item';
-      // 確保 Q9 的標題中 "⚠️" 放在 Q 之前
-      const questionText = item.q.includes('⚠️') || item.q.includes('➜') ? item.q : item.q;
       wrapper.innerHTML = `
-                <button class="faq-question">${questionText}</button>
+                <button class="faq-question">${item.q}</button>
                 <div class="faq-answer">
                     <div class="answer-content">${item.a}</div>
                 </div>
             `;
       faqContainer.appendChild(wrapper);
     });
+
+    // FAQ 摺疊功能
     const questions = document.querySelectorAll('.faq-question');
     questions.forEach(btn => {
       btn.addEventListener('click', () => {
         const item = btn.parentElement;
-        // 自動關閉其他
         document.querySelectorAll('.faq-item').forEach(i => {
           if (i !== item) i.classList.remove('active');
         });
