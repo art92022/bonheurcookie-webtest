@@ -226,7 +226,7 @@
 
     /* 展開狀態 */
     .faq-item.active .faq-answer {
-      max-height: 1200px; /* 增加最大高度以容納更多內容 */
+      max-height: 1200px;
     }
 
     .faq-item.active .faq-question::after {
@@ -288,31 +288,36 @@
       faqs: [{
           q: "Q1. 產品建議保存方式？",
           a: `<ul>
-                          <li><strong>達克瓦茲 / 奶油餅 / 巧克力松露 / 冰磚：</strong>冷凍保存 14 天</li>
-                          <li><strong>費南雪：</strong>常溫 10 天 / 冷凍 14 天</li>
-                          <li><strong>餅乾：</strong>常溫 14 天</li>
-                        </ul>
-                        <div class="warning" style="margin-top: 12px; font-size: 0.9em; line-height: 1.6;">
-                          ⚠️ 保存環境特別提醒：<br>上述天數為「理想狀態」。因家用冰箱冷度不一，溫度不足極易導致甜點受潮變質（特別是鹽奶油紅豆）。為確保品質，強烈建議收到後盡早食用！
-                        </div>`
+                <li><strong>達克瓦茲 / 冰磚：</strong>冷凍 14 天</li>
+                <li><strong>巧克力松露：</strong>冷凍 7-14 天</li>
+                <li><strong>奶油餅：</strong>冷凍 21 天</li>
+                <li><strong>費南雪：</strong>常溫 10 天 / 冷凍 14 天</li>
+                <li><strong>餅乾：</strong>常溫 14 天</li>
+              </ul>
+              <div style="font-size: 0.85rem; color: #8C7B70; margin-top: 10px; border-top: 1px dashed #DDD; padding-top: 8px;">
+                ※ 本產品不添加人工色素、甜味劑、防腐劑及抗氧化劑 ※
+              </div>
+              <div class="warning" style="margin-top: 12px; font-size: 0.9em; line-height: 1.6;">
+                ⚠️ 保存環境特別提醒：<br>上述天數為「理想狀態」。因家用冰箱冷度不一，溫度不足極易導致甜點受潮變質（特別是鹽奶油紅豆）。為確保品質，強烈建議收到後盡早食用！
+              </div>`
         },
         {
           q: "Q2. 產品建議食用方式？",
           a: `<ul>
-                          <li><strong>達克瓦茲 / 奶油餅：</strong>夏天退冰 10-20 分鐘 / 冬天退冰 20-30 分鐘</li>
-                          <li><strong>巧克力松露：</strong>退冰 30 分鐘</li>
-                          <li><strong>冰磚 / 費南雪：</strong>退冰 10 分鐘 </li>
-                        </ul>
-                        <div class="warning" style="margin-top: 8px;">※ 為了品質穩定，勿久放高溫環境 ※</div>`
+                <li><strong>達克瓦茲 / 奶油餅：</strong>夏天退冰 10-20 分鐘 / 冬天退冰 20-30 分鐘</li>
+                <li><strong>巧克力松露：</strong>退冰 30 分鐘</li>
+                <li><strong>冰磚 / 費南雪：</strong>退冰 10 分鐘 </li>
+              </ul>
+              <div class="warning" style="margin-top: 8px;">※ 為了品質穩定，勿久放高溫環境 ※</div>`
         },
         {
           q: "Q3. 運送方式與運費？",
           a: `<ul>
-                           <li>冷凍宅配：$190 (外島 $225)</li>
-                           <li>黑貓宅配週日無配送。</li>
-                           <li>商品寄出前一天會以簡訊通知。</li>
-                           <li><span class="warning">不提供面交</span></li>
-                        </ul>`
+                <li>冷凍宅配：$190 (外島 $225)</li>
+                <li>黑貓宅配週日無配送。</li>
+                <li>商品寄出前一天會以簡訊通知。</li>
+                <li><span class="warning">不提供面交</span></li>
+              </ul>`
         },
         {
           q: "Q4. 連假寄公司怕沒人收？",
@@ -347,32 +352,32 @@
         {
           q: "Q7. 製作工期與急件？",
           a: `<span class="highlight">我們堅持手工製作</span>，嚴選頂級食材，極致藝術值得等待。<br><br>
-                        <ul>
-                            <li><span class="warning">純手工製作，無法指定日期。</span></li>
-                            <li>無法延後或提早出貨，僅能盡力配合。</li>
-                            <li><span class="warning">無法配合者請勿下單。</span></li>
-                        </ul>`
+              <ul>
+                  <li><span class="warning">純手工製作，無法指定日期。</span></li>
+                  <li>無法延後或提早出貨，僅能盡力配合。</li>
+                  <li><span class="warning">無法配合者請勿下單。</span></li>
+              </ul>`
         },
         {
           q: "Q8. 出貨順序問題？",
           a: `出貨日會依下單順序與送出訂單秒差依序出貨。<br>
-                        <span class="small">※特殊節慶物流量大 可能延遲到貨※</span>`
+              <span class="small">※特殊節慶物流量大 可能延遲到貨※</span>`
         },
         {
           q: "⚠️ Q9. 訂購須知 (下單必讀)",
           a: `<ul>
-                           <li>包裏無法完成配送退回，來回運費需自行吸收。</li>
-                           <li>網站系統無法合併或拆單 (一單一地址)。</li>
-                           <li><span class="warning">無法取消或更改訂單內容。</span></li>
-                           <li>生鮮食品<strong>無 7 天鑑賞期</strong>。</li>
-                           <li><strong>請於開箱時錄影</strong>，保障雙方權益。</li>
-                           <li>本商品不提供紙袋。</li>
-                        </ul>`
+                 <li>包裏無法完成配送退回，來回運費需自行吸收。</li>
+                 <li>網站系統無法合併或拆單 (一單一地址)。</li>
+                 <li><span class="warning">無法取消或更改訂單內容。</span></li>
+                 <li>生鮮食品<strong>無 7 天鑑賞期</strong>。</li>
+                 <li><strong>請於開箱時錄影</strong>，保障雙方權益。</li>
+                 <li>本商品不提供紙袋。</li>
+              </ul>`
         },
         {
           q: "➜ Q10. 訂單進度查詢",
           a: `如需宅配單號，請於 <span class="highlight">寄出日當天 15:00 後</span> 到訂單內查詢。<br>
-                        有任何問題請至訂單頁面詢問我們，謝謝。`
+              有任何問題請至訂單頁面詢問我們，謝謝。`
         }
       ]
     };
