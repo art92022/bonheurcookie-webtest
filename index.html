@@ -226,7 +226,7 @@
 
     /* 展開狀態 */
     .faq-item.active .faq-answer {
-      max-height: 1200px;
+      max-height: 1400px;
     }
 
     .faq-item.active .faq-question::after {
@@ -280,9 +280,9 @@
           icon: "📘"
         },
         {
-          title: "徵才資訊 Recruitment",
-          url: "https://www.104.com.tw/company/1a2x6blhwm#info06",
-          icon: "💼"
+          title: "大量訂購 Bulk Order",
+          url: "https://www.bonheurcookie.com/pages/bulk-order",
+          icon: "🎁"
         }
       ],
       faqs: [{
@@ -292,8 +292,8 @@
                 <li><strong>巧克力松露：</strong>冷凍 14 天</li>
                 <li><strong>奶油餅：</strong>冷凍 14 天</li>
                 <li><strong>費南雪：</strong>常溫 10 天 / 冷凍 14 天</li>
-                <li><strong>餅乾：</strong>常溫 14 天</li>
                 <li><strong>柔雪：</strong>冷藏 14 天</li>
+                <li><strong>馬林糖 / 鐵盒餅乾：</strong>常溫 20 天</li>
               </ul>
               <div style="font-size: 0.85rem; color: #8C7B70; margin-top: 10px; border-top: 1px dashed #DDD; padding-top: 8px;">
                 ※ 本產品不添加人工色素、甜味劑、防腐劑及抗氧化劑
@@ -307,7 +307,8 @@
           a: `<ul>
                 <li><strong>達克瓦茲 / 奶油餅：</strong>夏天退冰 10-20 分鐘 / 冬天退冰 20-30 分鐘</li>
                 <li><strong>巧克力松露：</strong>退冰 30 分鐘</li>
-                <li><strong>冰磚 / 費南雪：</strong>退冰 10 分鐘 </li>
+                <li><strong>費南雪：</strong>退冰 5-10 分鐘</li>
+                <li><strong>冰磚：</strong>退冰 10 分鐘</li>
                 <li><strong>柔雪：</strong>冷藏保存無需退冰，冷凍保存請退冰 10 分鐘</li>
               </ul>
               <div class="warning" style="margin-top: 8px;">※ 為了品質穩定，勿久放高溫環境 ※</div>`
@@ -316,8 +317,11 @@
           q: "Q3. 運送方式與運費？",
           a: `<ul>
                 <li>冷凍宅配：$190 (外島 $225)</li>
-                <li>黑貓宅配週日無配送。</li>
-                <li>商品寄出前一天會以簡訊通知。</li>
+                <li>常溫宅配：$150（馬林糖 / 鐵盒餅乾）</li>
+                <li>黑貓宅配週日無配送，冷凍甜點收到後請盡早放入冷凍冰箱。</li>
+                <li>商品寄出前一天會以手機簡訊通知收件人。</li>
+                <li>商品背後皆有成分標示與保存方式，盒內附食用小卡說明。</li>
+                <li>如請家人或管理室代收，務必通知代收人留意，避免未轉告造成損失。</li>
                 <li><span class="warning">不提供面交</span></li>
               </ul>`
         },
@@ -347,15 +351,15 @@
           a: `<ul>
                 <li>本店採用電子發票制，出貨時將不會隨貨附上紙本發票。</li>
                 <li>完成付款後，系統會自動開立電子發票並寄送至您下單時所填寫的 <span class="highlight">電子郵件信箱</span>。</li>
-                <li>若需 開立三聯式發票，請於下單時完整填寫「發票抬頭」及「統一編號」，<span class="warning">訂單完成後無法補開或修改</span>。</li>
-                <li>若需將發票 存入手機載具，請於下單時輸入手機載具條碼，<span class="warning">訂單完成後恕無法重新開立或更改</span>。</li>
+                <li>若需開立三聯式發票，請於結帳頁面完整填寫「發票抬頭」及「統一編號」，<span class="warning">不接受事後補打統編</span>。</li>
+                <li>若需將發票存入手機載具，請於下單時輸入手機載具條碼，<span class="warning">訂單完成後恕無法重新開立或更改</span>。</li>
               </ul>`
         },
         {
           q: "Q7. 製作工期與急件？",
           a: `<span class="highlight">我們堅持手工製作</span>，嚴選頂級食材，極致藝術值得等待。<br><br>
               <ul>
-                  <li><span class="warning">純手工製作，無法指定日期。</span></li>
+                  <li><span class="warning">純手工製作，出貨日期無法指定。</span></li>
                   <li>無法延後或提早出貨，僅能盡力配合。</li>
                   <li><span class="warning">無法配合者請勿下單。</span></li>
               </ul>`
@@ -366,13 +370,14 @@
               <span class="small">※特殊節慶物流量大 可能延遲到貨※</span>`
         },
         {
-          q: "⚠️ Q91. 訂購須知 (下單必讀)",
+          q: "⚠️ Q9. 訂購須知 (下單必讀)",
           a: `<ul>
-                 <li>包裏無法完成配送退回，來回運費需自行吸收。</li>
-                 <li>網站系統無法合併或拆單 (一單一地址)。</li>
-                 <li><span class="warning">無法取消或更改訂單內容。</span></li>
-                 <li>生鮮食品<strong>無 7 天鑑賞期</strong>。</li>
-                 <li><strong>請於開箱時錄影</strong>，保障雙方權益。</li>
+                 <li><strong>請務必再次確認：</strong>收件人「中文姓名」、可聯絡的「手機電話」、完整「地址」及「Email」。若因資訊不完整導致包裹退回，來回運費需自行吸收。</li>
+                 <li>網站系統無法合併或拆單 (一筆訂單僅能寄送至一個地址)。</li>
+                 <li><span class="warning">無法取消或更改訂單內容，僅能更改收件地址。</span></li>
+                 <li>依消保法規定，生鮮食品不適用第 19 條，<strong>無 7 天鑑賞期</strong>。</li>
+                 <li>圖片僅供參考，實際以收到之商品為主。</li>
+                 <li><strong>請於開箱時錄影</strong>，如有問題可提供後續處理。</li>
                  <li>本商品不提供紙袋。</li>
               </ul>`
         },
